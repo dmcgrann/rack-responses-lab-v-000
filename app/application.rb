@@ -7,7 +7,7 @@ class Application
     
     resp.write "#{hour}\n"
     
-    if hour <= 12
+    if hour <= 11:59
       resp.write "Good Morning!"
     elsif hour >= 12 && hour <= 18
       resp.write "Good Afternoon!"
