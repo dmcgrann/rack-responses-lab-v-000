@@ -12,6 +12,6 @@ class Application
     elsif DateTime.now.hour >= 12
       resp.write "Good Afternoon!"
     end
-    
+    resp.finish
   end
 end
