@@ -9,7 +9,7 @@ class Application
     
     if hour <= 12
       resp.write "Good Morning!"
-    elsif hour >= 12 && hour <= 15
+    elsif hour >= 12 && hour <= 18
       resp.write "Good Afternoon!"
     end
     resp.finish
