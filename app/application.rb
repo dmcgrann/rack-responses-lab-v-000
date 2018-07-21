@@ -7,9 +7,9 @@ class Application
     
     resp.write "#{hour}\n"
     
-    if DateTime.now.hour <= 12
+    if hour <= 12
       resp.write "Good Morning!"
-    elsif DateTime.now.hour >= 12
+    elsif hour >= 12 && hour <= 15
       resp.write "Good Afternoon!"
     end
     resp.finish
